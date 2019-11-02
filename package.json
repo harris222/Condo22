@@ -1,0 +1,25 @@
+{
+  "name": "echacks",
+  "version": "1.0.0",
+  "description": "ECHacka",
+  "main": "app.js",
+  "scripts": {
+    "test": "hi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harris222/Condo19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harris222/Condo19/issues"
+  },
+  "homepage": "https://github.com/harris222/Condo19#readme",
+  "dependencies": {
+    "bson-ext": "^2.0.3",
+    "express": "^4.17.1",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.3.3"
+  }
+}
