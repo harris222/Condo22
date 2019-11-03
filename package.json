@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/harris222/Condo19#readme",
   "dependencies": {
+    "async": "^3.1.0",
     "bson-ext": "^2.0.3",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
