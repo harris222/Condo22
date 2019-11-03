@@ -7,8 +7,26 @@ body{
   /* border: 3px solid red; */
 }
 
+.blocks{
+  display: inline-block;
+  position: fixed;
+  left:-10px;
+  bottom:-3px;
+  width:130vw;
+  z-index: 99;
+}
+
+.sun{
+  position: fixed;
+  right: 0px;
+  box-shadow: -90px 30px 0px 30px #FFFFFF;
+  box-shadow: -90px 30px 30px 60px #F9FF33;
+  box-shadow: -90px 30px 60px 90px #FFE663;
+}
+
 .container-fluid{
   height: 100vh;
+  width: 100vw;
 }
 
 #settings-icon{
@@ -21,21 +39,19 @@ body{
 
 }
 
-.blocks{
-  display: inline-block;
-  position: fixed;
-  left:-10px;
-  bottom:-3px;
-  width:130vw;
+.layer-roof {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 100%;
+
+  transform: scale(1.2, 0.9);
+  background: linear-gradient(90deg,#37678d 50%,#10406f 50%);
+  clip-path: polygon(20% 0%,80% 0%,100% 100%,0% 100%);
+  -webkit-clip-path: polygon(20% 0%,80% 0%,100% 100%,0% 100%);
+  animation: popOutA 0.15s ease-out reverse forwards;
 }
 
-.sun{
-  position: fixed;
-  right: 0px;
-  box-shadow: -90px 30px 0px 30px #FFFFFF;
-  box-shadow: -90px 30px 30px 60px #F9FF33;
-  box-shadow: -90px 30px 60px 90px #FFE663;
-}
 
 .building{
   margin: auto;
@@ -47,14 +63,15 @@ body{
 }
 
 .level{
-  top: 0px;
+  position:relative;
   margin: auto;
   width: 100%;
   height: 25%;
   display: block;
   background-color: #FFFFFF;
-  border: 15px black solid;
+  border: 3px black solid;
   z-index: 0;
+
 }
 
 .level > img{
@@ -62,26 +79,22 @@ body{
   position: absolute;
   max-width: 40%;
   max-height: 40%;
+  bottom: 0px;
+  left: 20%;
   z-index: 0;
 }
 
 
-
-.groundspace{
-  display: block;
-  height: 45px;
-}
-
 .specbubble{
-  margin:auto;
-  padding:10px;
   position: absolute;
-  right: 26%;
+  padding:10px;
+  right: 0%;
   background-color: white;
   border: 3px solid lightblue;
-  width: 15%;
+  width: 40%;
   height: 22%;
-  font-size: 50px;
+  text-overflow:ellipsis;
+  font-size: 25px;
   border-radius: 10px;
   z-index: 1;
 }
@@ -90,6 +103,34 @@ body{
   position: fixed;
   left: 0px
   display: inline-block;
+}
+
+#level1{
+  background: rgb(233,223,196);
+  background: -moz-linear-gradient(left, rgba(233,223,196,1) 0%, rgba(233,223,196,1) 1%, rgba(237,227,200,1) 2%, rgba(237,227,200,1) 24%, rgba(235,221,195,1) 25%,
+  rgba(233,223,196,1) 48%, rgba(235,221,195,1) 49%, rgba(230,216,189,1) 52%, rgba(230,216,189,1) 53%, rgba(233,219,192,1) 54%, rgba(230,216,189,1)
+  55%, rgba(230,216,189,1) 56%, rgba(233,219,192,1) 57%, rgba(230,216,189,1) 58%, rgba(230,216,189,1) 73%, rgba(233,219,192,1) 74%, rgba(233,219,192,1)
+  98%, rgba(235,221,195,1) 100%);
+
+  background: -webkit-linear-gradient(left, rgba(233,223,196,1) 0%,rgba(233,223,196,1) 1%,rgba(237,227,200,1) 2%,rgba(237,227,200,1) 24%,rgba(235,221,195,1) 25%,
+  rgba(233,223,196,1) 48%,rgba(235,221,195,1) 49%,rgba(230,216,189,1) 52%,rgba(230,216,189,1) 53%,rgba(233,219,192,1) 54%,rgba(230,216,189,1) 55%,rgba(230,216,189,1) 56%,
+  rgba(233,219,192,1) 57%,rgba(230,216,189,1) 58%,rgba(230,216,189,1) 73%,rgba(233,219,192,1) 74%,rgba(233,219,192,1) 98%,rgba(235,221,195,1) 100%);
+
+  background: -o-linear-gradient(left, rgba(233,223,196,1) 0%,rgba(233,223,196,1) 1%,rgba(237,227,200,1) 2%,rgba(237,227,200,1) 24%,rgba(235,221,195,1) 25%,rgba(233,223,196,1) 48%,
+  rgba(235,221,195,1) 49%, rgba(230,216,189,1) 52%,rgba(230,216,189,1) 53%,rgba(233,219,192,1) 54%,rgba(230,216,189,1) 55%,rgba(230,216,189,1) 56%,rgba(233,219,192,1) 57%,
+  rgba(230,216,189,1) 58%,rgba(230,216,189,1) 73%,rgba(233,219,192,1) 74%,rgba(233,219,192,1) 98%,rgba(235,221,195,1) 100%);
+
+  background: -ms-linear-gradient(left, rgba(233,223,196,1) 0%,rgba(233,223,196,1) 1%,rgba(237,227,200,1) 2%,rgba(237,227,200,1) 24%,rgba(235,221,195,1) 25%,rgba(233,223,196,1) 48%,
+  rgba(235,221,195,1) 49%,rgba(230,216,189,1) 52%,rgba(230,216,189,1) 53%,rgba(233,219,192,1) 54%,rgba(230,216,189,1) 55%,rgba(230,216,189,1) 56%,rgba(233,219,192,1) 57%,
+  rgba(230,216,189,1) 58%,rgba(230,216,189,1) 73%,rgba(233,219,192,1) 74%,rgba(233,219,192,1) 98%,rgba(235,221,195,1) 100%);
+
+  background: linear-gradient(left, rgba(233,223,196,1) 0%,rgba(233,223,196,1) 1%,rgba(237,227,200,1) 2%,rgba(237,227,200,1) 24%,rgba(235,221,195,1) 25%,rgba(233,223,196,1) 48%,
+  rgba(235,221,195,1) 49%,rgba(230,216,189,1) 52%,rgba(230,216,189,1) 53%,rgba(233,219,192,1) 54%,rgba(230,216,189,1) 55%,rgba(230,216,189,1) 56%,rgba(233,219,192,1) 57%,
+  rgba(230,216,189,1) 58%,rgba(230,216,189,1) 73%,rgba(233,219,192,1) 74%,rgba(233,219,192,1) 98%,rgba(235,221,195,1) 100%);
+
+  background-size: 120px;
+  background-repeat: repeat;
+  border-radius: 20px;
 }
 #pagoda{
 
