@@ -1,7 +1,7 @@
 body{
   height: 100vh;
   width: 100vw;
-  background-color:blue;
+  background-color: lightblue;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -9,7 +9,19 @@ body{
 .blocks{
   display: inline-block;
   position: fixed;
-  bottom:0px;
-  height:100vh;
+  left:-10px;
+  bottom:-3px;
   width:130vw;
+}
+
+.sun{
+  position: fixed;
+  right: 0px;
+  box-shadow: -90px 30px 0px 30px #FFFFFF;
+  box-shadow: -90px 30px 30px 60px #F9FF33;
+  box-shadow: -90px 30px 60px 90px #FFE663;
+}
+
+#pagoda{
+
 }
