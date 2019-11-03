@@ -31,6 +31,14 @@ app.get('/', function(req, res) {
 app.post('/', function(req, res){
   console.log(req.body.username);
   console.log(req.body.password);
+
+  // const userSchema = new mongoose.Schema({
+  //   account: {
+  //     username: req.body.username,
+  //     password:
+  // }
+  //  });
+
   // Read Database and proceed to status
   // Or if Post fails, do nothing
   res.sendFile(path.join(public, 'friend.html'));
