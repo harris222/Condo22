@@ -1,15 +1,14 @@
 body{
   height: 100vh;
   width: 100vw;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   overflow-y: scroll;
   overflow-x: hidden;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .container-fluid{
   height: 100vh;
-  background-color: none;
 }
 
 #settings-icon{
@@ -38,6 +37,64 @@ body{
   box-shadow: -90px 30px 60px 90px #FFE663;
 }
 
+.building{
+  margin: auto;
+  width: 50%;
+  height: 220%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.level{
+  top: 0px;
+  margin: auto;
+  width: 100%;
+  height: 25%;
+  display: block;
+  background-color: #FFFFFF;
+  border: 15px black solid;
+  z-index: 0;
+}
+
+.level > img{
+  margin: auto;
+  position: absolute;
+  max-width: 40%;
+  max-height: 40%;
+  z-index: 0;
+}
+
+
+
+.groundspace{
+  display: block;
+  height: 45px;
+}
+
+.specbubble{
+  margin:auto;
+  padding:10px;
+  position: absolute;
+  right: 26%;
+  background-color: white;
+  border: 3px solid lightblue;
+  width: 15%;
+  height: 22%;
+  font-size: 50px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#settingsbutton{
+  position: fixed;
+  left: 0px
+  display: inline-block;
+}
 #pagoda{
 
+}
+
+#blossom_tile1, #blossom_tile2, #grass_tile{
+    z-index: 99;
 }
