@@ -1,23 +1,57 @@
 body{
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to bottom, rgba(47,141,255,0.4) 40%, rgba(0,0,225,0.4) 70%);
+  background-color: white;
   background-size: cover;
   overflow: hidden;
+  font-family: 'Harrington', fantasy;
+  font-size: 14px;
+  font-weight: 1000;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
-#cloud{
-  position: absolute;
-  width: 240px;
-  height: 120px;
+h1{
+  padding: 10px;
+  margin: auto;
 }
 
-.cloud{
+
+/* Animations */
+#animated{
+  display: flex;
+  justify-content:center;
+  position: fixed;
+  height: 300px;
+  left:0;
+  bottom:0;
+} #girlInTheWind{
   position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+  height: inherit;
+  width: 400px;
+  left: 0px;
+  border: 1px solid #41403E;
   z-index: -1;
+} #girlInTheWind img{
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#wind{
+  position: absolute;
+  height: 120px;
+  width: 100px;
+  left: 40px;
+  bottom: 120px;
+} #wind img{
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .container{
@@ -25,10 +59,25 @@ body{
   justify-content:center;
 }
 
+
+
 #questionnaire{
-  width: 45%;
-  margin-top: 25vh;
-  background: rgb(233,223,196);
+  z-index: 0;
+  min-width: 400px;
+  width: 30%;
+  height: 80vh;
+  margin-top: 5vh;
+  border-top-left-radius: 225px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  border:solid 2px #41403E;
+  background-color: white;
+  color: black;
+  transition: ease-out 0.2s;
+
+  /* Glorious Wooden Background */
+  /* background: rgb(233,223,196);
   background: -moz-linear-gradient(left, rgba(233,223,196,1) 0%, rgba(233,223,196,1) 1%, rgba(237,227,200,1) 2%, rgba(237,227,200,1) 24%, rgba(235,221,195,1) 25%,
   rgba(233,223,196,1) 48%, rgba(235,221,195,1) 49%, rgba(230,216,189,1) 52%, rgba(230,216,189,1) 53%, rgba(233,219,192,1) 54%, rgba(230,216,189,1)
   55%, rgba(230,216,189,1) 56%, rgba(233,219,192,1) 57%, rgba(230,216,189,1) 58%, rgba(230,216,189,1) 73%, rgba(233,219,192,1) 74%, rgba(233,219,192,1)
@@ -53,11 +102,19 @@ body{
   background-size: 120px;
   background-repeat: repeat;
   border-radius: 20px;
-  box-shadow: inset 7px 5px 3px rgba(0,0,0,0.4);   
-} #questionnaire:hover{
-
-
+  box-shadow: inset 7px 5px 3px rgba(0,0,0,0.4);    */
 }
+
+.btn.btn-primary{
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+} .btn.btn-primary:hover{
+  background-color: white;
+  color: black;
+  transition: 0.2s ease-out;
+}
+
 
 .form{
   padding: 20px;

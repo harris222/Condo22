@@ -14,8 +14,16 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(public, 'login.html'));
 });
 
+app.post('/', function(req, res){
+  // Read Database and proceed to status
+  // Or if Post fails, do nothing
+  res.sendFile(path.join(public, 'friend.html'));
+});
+
 //app.get('/login')
 app.use('/', express.static(public));
+
+// after submission, go to friends
 
 // Might need a User Too...
 // ???
@@ -39,8 +47,6 @@ app.listen(port, () => {
 
 
 
-var MongoClient = require('mongodb').MongoClient
-  , assert = require('assert');
 
 var uri = "mongodb://newUser:1@cluster0-shard-00-00-qwtwk.mongodb.net:27017,cluster0-shard-00-01-qwtwk.mongodb.net:27017,cluster0-shard-00-02-qwtwk.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority";
 MongoClient.connect(uri, function(err, client) {

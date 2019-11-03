@@ -13,39 +13,39 @@
     <!-- Jquery... Might cause errors -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheets/form.css" type="text/css">
     <script src="animation.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
 
 
-  <div id="cloud"><img src='images/cloud.png' class='cloud'></div>
-  <div id="cloud"><img src='images/cloud.png' class='cloud'></div>
-  <div id="cloud"><img src='images/cloud.png' class='cloud'></div>
-  <div id="cloud"><img src='images/cloud.png' class='cloud'></div>
-
-
 <div class = "container">
   <div id="questionnaire">
-    <form class="form">
+      <h1> Condo22 </h1>
+    <form class="form" method="post">
       <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <label for="exampleInputEmail1">Username</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username" name="username">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
       </div>
       <div class="form-group form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <label class="form-check-label" for="exampleCheck1">Check to Go!</label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
 </div>
+  <div id="animated">
+    <div id="girlInTheWind"><img src="images/girlInTheWind.gif"></div>
+    <div id="wind"><img src="images/wind1.PNG"></div>
+  </div>
+
 
 
   </body>
