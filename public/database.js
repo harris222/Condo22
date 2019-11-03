@@ -35,7 +35,7 @@ async function loginCheck(user, pass) {
             {
                 username: user,
                 password: pass
-            }).limit(1).count()); 
+            }).limit(1).count());
         return userCount > 0;
     } finally {
         //client.close();
