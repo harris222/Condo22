@@ -19,7 +19,7 @@
   "dependencies": {
     "async": "^3.1.0",
     "bson-ext": "^2.0.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-validator": "^6.2.0",
     "mongod": "^2.0.0",
     "mongodb": "^3.3.3",
